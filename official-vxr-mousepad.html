@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Official VXR MousePad | VXR</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#07070b;
+  color:#fff;
+  overflow-x:hidden;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:45px 45px;
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(1100px,92%);margin:auto}
+
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(7,7,11,.88);
+  backdrop-filter:blur(15px);
+  border-bottom:1px solid rgba(139,92,246,.18);
+}
+.nav{
+  height:70px;display:flex;align-items:center;justify-content:space-between;
+}
+.logo{font-size:25px;font-weight:900;letter-spacing:4px}
+.logo span{color:#9b6cff}
+.back{
+  padding:11px 17px;border-radius:10px;
+  border:1px solid rgba(139,92,246,.3);
+  background:rgba(255,255,255,.04);
+  font-weight:bold;transition:.2s;
+}
+.back:hover{transform:translateY(-2px);background:rgba(139,92,246,.12)}
+
+.product-page{padding:125px 0 90px}
+.product-grid{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:55px;
+  align-items:start;
+}
+.image-box{
+  padding:12px;border-radius:24px;
+  border:1px solid rgba(139,92,246,.3);
+  background:linear-gradient(135deg,rgba(139,92,246,.13),rgba(18,18,27,.8));
+  box-shadow:0 25px 80px rgba(0,0,0,.35);
+}
+.image-box img{
+  width:100%;display:block;border-radius:16px;
+}
+.tag{
+  display:inline-block;padding:8px 14px;
+  border:1px solid rgba(139,92,246,.35);
+  border-radius:50px;color:#cdbaff;
+  background:rgba(139,92,246,.08);
+  font-size:12px;font-weight:bold;
+  letter-spacing:2px;margin-bottom:18px;
+}
+h1{
+  font-size:clamp(38px,5vw,64px);
+  line-height:1.02;margin-bottom:18px;
+}
+.subtitle{
+  color:#aaa5b8;line-height:1.75;font-size:16px;
+  margin-bottom:28px;
+}
+.price{
+  font-size:40px;font-weight:900;
+  color:#cdb8ff;margin-bottom:8px;
+}
+.status{
+  color:#9f8bbd;font-size:13px;
+  margin-bottom:28px;
+}
+.order{
+  padding:22px;border-radius:18px;
+  border:1px solid rgba(139,92,246,.25);
+  background:rgba(18,18,27,.75);
+  margin-top:28px;
+}
+.order h3{margin-bottom:10px}
+.order p{color:#aaa5b8;line-height:1.65;font-size:14px}
+.btn{
+  display:inline-block;padding:14px 22px;border-radius:12px;
+  font-weight:900;border:1px solid rgba(139,92,246,.3);
+  transition:.2s;margin-top:18px;
+}
+.btn:hover{transform:translateY(-3px)}
+.primary{
+  background:linear-gradient(135deg,#a16dff,#6b35d6);
+  box-shadow:0 12px 35px rgba(139,92,246,.25);
+}
+.details{
+  margin-top:75px;
+}
+.title{text-align:center;margin-bottom:38px}
+.title small{color:#ad8aff;letter-spacing:2px;font-weight:bold}
+.title h2{font-size:38px;margin-top:9px}
+.details-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:18px;
+}
+.detail{
+  background:rgba(18,18,27,.75);
+  border:1px solid rgba(139,92,246,.2);
+  border-radius:18px;padding:25px;
+}
+.detail h3{margin-bottom:10px}
+.detail p{color:#aaa5b8;line-height:1.65}
+footer{
+  padding:35px 0;border-top:1px solid rgba(255,255,255,.07);
+  color:#777282;font-size:13px;
+}
+.footer{display:flex;justify-content:space-between;gap:20px}
+
+@media(max-width:800px){
+  .product-grid{grid-template-columns:1fr;gap:35px}
+  .details-grid{grid-template-columns:1fr}
+  .product-page{padding-top:105px}
+  .footer{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav">
+    <a href="index.html" class="logo"><span>V</span>XR</a>
+    <a href="index.html#store" class="back">← BACK TO STORE</a>
+  </div>
+</nav>
+
+<main class="product-page">
+  <div class="container">
+
+    <div class="product-grid">
+      <div class="image-box">
+        <img src="mousepad.png" alt="Official VXR MousePad">
+      </div>
+
+      <div>
+        <div class="tag">OFFICIAL VXR PRODUCT</div>
+        <h1>Official VXR MousePad</h1>
+        <p class="subtitle">
+          Upgrade your setup with the official VXR Gaming Mousepad, designed
+          for competitive Fortnite and smooth, consistent mouse movement.
+        </p>
+
+        <div class="price">$44.50</div>
+        <div class="status">AVAILABLE NOW</div>
+
+        <div class="order">
+          <h3>How to Order</h3>
+          <p>
+            To purchase the Official VXR MousePad, contact VXR through the
+            Discord server to confirm availability and ordering details.
+          </p>
+          <p style="margin-top:10px;">
+            PayPal: <strong>@therealjibba</strong>
+          </p>
+          <a class="btn primary" href="https://discord.gg/4VBVPvpMk" target="_blank">
+            ORDER THROUGH DISCORD
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="details">
+      <div class="title">
+        <small>PRODUCT DETAILS</small>
+        <h2>Built for your setup.</h2>
+      </div>
+
+      <div class="details-grid">
+        <div class="detail">
+          <h3>Dimensions</h3>
+          <p>39.4 × 19.7 inches</p>
+        </div>
+
+        <div class="detail">
+          <h3>Price</h3>
+          <p>$44.50</p>
+        </div>
+
+        <div class="detail">
+          <h3>Designed For</h3>
+          <p>Competitive Fortnite and smooth, consistent mouse movement.</p>
+        </div>
+
+        <div class="detail">
+          <h3>Availability</h3>
+          <p>Available now. Future VXR mousepads may release for limited-time availability.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container footer">
+    <span>© 2026 VXR. All rights reserved.</span>
+    <span>GAMING • COMMUNITY • VXR</span>
+  </div>
+</footer>
+
+</body>
+</html>
